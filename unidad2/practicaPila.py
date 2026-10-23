@@ -35,3 +35,10 @@ print()
 #OPERACION VACIA (EMPTY)
 sin_peliculas=len(historial_peliculas)==0
 print("¿El historial esta vacio?: ", sin_peliculas)
+print("")
+
+while historial_peliculas:
+    pelicula_retirada=historial_peliculas.pop()
+    print(f"D)esapilado: {pelicula_retirada}")
+print("")
+print(f"historial por ver: {historial_peliculas}"

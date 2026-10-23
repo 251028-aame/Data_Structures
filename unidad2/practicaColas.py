@@ -13,13 +13,12 @@ for turno in cola_turnos:
 print("")
 print("Iniciando atención en ventanilla")
 print("")
-#EL REPODUCTOR PROCESA LA COLA CANCION POR CANCION (DESENCOLAR)
+
 while cola_turnos:
     turno_actual=cola_turnos.popleft()
     print(f"Llamando a ventanilla: {turno_actual}")
-    time.sleep(1) #simula la duración dle tema
+    time.sleep(1) #(1) significa la duracion de un segundo para simular el turno
     print(f"Atención finalizada: {turno_actual}")
-    #Muestran cunatas canciones quedan en la cola 
     print(f"(Clientes restantes en la fila: {len(cola_turnos)})")
     print("")
 print("Se han atendido todos los turnos. Fila vacía")
